@@ -7,12 +7,15 @@ echo "/* Hostname ************************************************************/"
 hostname
 echo "/* Getting kernel version **********************************************/"
 uname -a
-echo "/* Date ****************************************************************/"
-date
 echo "/* Kernel command line *************************************************/"
 cat /proc/cmdline
 echo "/* Getting OS version **************************************************/"
-cat /etc/issue
+if [ -f /etc/redhat-release ]
+then
+    cat /etc/redhat-release
+else
+    cat /etc/issue
+fi
 echo "/* Getting system uptime ***********************************************/"
 uptime
 if hash service 2>/dev/null; then
