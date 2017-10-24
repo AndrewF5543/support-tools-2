@@ -19,6 +19,7 @@ cp /opt/threatstack/cloudsight/logs/install.log /tmp/$name/install.log
 cp /opt/threatstack/cloudsight/logs/error.log /tmp/$name/error.log
 cp /opt/threatstack/cloudsight/logs/threatstack-audit.log /tmp/$name/threatstack-audit.log
 cp /opt/threatstack/cloudsight/logs/threatstack-tsfim.log /tmp/$name/threatstack-tsfim.log
+cp /opt/threatstack/cloudsight/logs/threatstack-tsfim.log /tmp/$name/threatstack-containers.log
 echo "/* Tarring log files ***************************************************/"
 tar -czvf $name.tar.gz -C /tmp/ $name || ( echo "Failed to generate tarball! Exiting" ; exit 1 )
 echo "/* Done tarring log files **********************************************/"
