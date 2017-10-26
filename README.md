@@ -1,10 +1,6 @@
 Threat Stack Support Tools
 
-You have two options for using this support tool:
 # Check out this branch on Github and run `diagnostics.sh`
-# Download `diagnostics.sh` manually with the contents of each of the folders
-
-**IMPORTANT!** If you choose to download `diagnostics.sh` and the folders manually, confirm that the file directory structure remains the same as in Github.
 
 ## Master Script Overview
 
