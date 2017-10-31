@@ -4,6 +4,9 @@ Threat Stack Support Tools
 
 ## Master Script Overview
 
+To use the support tool, please run `sudo bash diagnostics.sh`.
+NOTE: You must use `bash` in order for the script to execute properly. `sh` doesn't work in this case.
+
 Running the `diagnostics.sh` master script gathers system information. It calls the following child scripts and runs a series of commands that:
 - `gather_system_info.sh`: returns information about the host system (such as OS version, kernel version, and system uptime)
 - `gather_agent_info.sh`: returns information about the agent installed on the host system (such as agent version, the output of `cloudsight status`, and the contents of `config.json`)
